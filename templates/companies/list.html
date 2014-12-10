@@ -1,0 +1,16 @@
+{% include "layout/header.html" %}
+<div class="desc">
+    <ul class="clients">
+        {% for company in companies %}
+        <li>
+            <div style="font-size: 20px; color: #fff;">{{company.name}}</div>
+            <a href="{{ company.href }}" target="_blank">
+                <i class="product-logo icon-{{ company.key }}"></i>
+            </a>
+            <div><a href="companies/{{company.company_id}}" style="font-size: 20px;">Edit</a></div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% include "layout/footer.html" %}

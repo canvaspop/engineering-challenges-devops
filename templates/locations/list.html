@@ -1,0 +1,21 @@
+{% include "layout/header.html" %}
+<div class="desc">
+    {% if locations %}
+    <ul class="clients">
+        {% for location in locations %}
+        <li>
+            <div style="font-size: 20px; color: #fff;">{{location.name}}</div>
+            <div style="font-size: 14px; color: #fff;">{{location.created}}</div>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <a href="locations/populate" style="font-size: 12px; text-decoration: none;">Click here to update the cache.</a>
+    {% else %}
+    <div style="color: #fff;">No locations found.</div>
+
+    <a href="locations/populate" style="font-size: 20px; text-decoration: none;">Click here to populate the cache.</a>
+    {% endif %}
+</div>
+
+{% include "layout/footer.html" %}

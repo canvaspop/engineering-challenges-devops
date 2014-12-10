@@ -1,0 +1,30 @@
+{% include "layout/header.html" %}
+<div class="desc">
+    <ul class="clients">
+        <li>
+            <a>
+                <i class="product-logo icon-{{ company.key }}"></i>
+            </a>
+
+            <form method="post" action="/companies/{{company.company_id}}">
+                <input type="hidden" name="id" value="{{company.company_id}}"/>
+
+                <div class="row">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" value="{{company.name}}" />
+                </div>
+                <div class="row">
+                    <label for="url">URL</label>
+                    <input type="text" id="url" name="url" value="{{company.url}}" />
+                </div>
+
+                <div class="row">
+                    <button type="submit">Save</button>
+                </div>
+
+            </form>
+        </li>
+    </ul>
+</div>
+
+{% include "layout/footer.html" %}
