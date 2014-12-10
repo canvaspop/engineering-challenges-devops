@@ -21,7 +21,7 @@ The environment of the system is set using an environment variable in the defaul
 ```SetEnvIf ^ .* APPLICATION_ENV=local```
 
 This value should be changed to `production`, which will load the site configuration via `config/config.production.php` instead of `config/config.local.php`.  The values in
-`config\config.production.php` will need to be updated appropriately to the environment you create.
+`config/config.production.php` will need to be updated appropriately to the environment you create.
 
 Use best practices when making changes to the environment.  Set it up as if it was a production environment that you were required to maintain.
 
