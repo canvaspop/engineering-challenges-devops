@@ -31,6 +31,6 @@ You have 24 hours to complete this challenge.  Any other modifications above and
 
 The application is written in PHP, and uses composer for dependency management.  To install the composer dependencies, run this from the root of the project:
 
-```php composer.phar install``
+``php composer.phar install``
 
 The application uses MySQL as the database backend.  There is a convenience SQL script (`migration.sql`) for creating and populating the database, located at the root of the project.
