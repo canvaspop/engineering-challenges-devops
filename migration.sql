@@ -1,7 +1,7 @@
 DROP DATABASE IF EXISTS `workshopx-engineering-challenges`;
 CREATE DATABASE `workshopx-engineering-challenges`;
 USE `workshopx-engineering-challenges`;
-GRANT ALL PRIVILEGES ON `workshopx-engineering-challenges`.* TO 'devops'@'%';
+GRANT ALL PRIVILEGES ON `workshopx-engineering-challenges`.* TO 'devops'@'%' IDENTIFIED BY 'appl1c@t1onu$3r';
 
 CREATE TABLE `companies` (
   `company_id` int(11) unsigned NOT NULL AUTO_INCREMENT,

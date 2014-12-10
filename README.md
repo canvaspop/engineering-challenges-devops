@@ -23,4 +23,14 @@ The environment of the system is set using an environment variable in the defaul
 This value should be changed to `production`, which will load the site configuration via `config/config.production.php` instead of `config/config.local.php`.  The values in
 `config\config.production.php` will need to be updated appropriately to the environment you create.
 
+Use best practices when making changes to the environment.  Set it up as if it was a production environment that you were required to maintain.
+
 You have 24 hours to complete this challenge.  Any other modifications above and beyond the requirements are welcome.  Show us what you can do!
+
+## Tips
+
+The application is written in PHP, and uses composer for dependency management.  To install the composer dependencies, run this from the root of the project:
+
+```php composer.phar install``
+
+The application uses MySQL as the database backend.  There is a convenience SQL script (`migration.sql`) for creating and populating the database, located at the root of the project.
